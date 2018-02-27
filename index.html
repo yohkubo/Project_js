@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The King of Pizza</title>
+	<meta charset="utf-8" content="text/html";>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/pizzastyle.css">
+	<style type="text/css">
+	body {background-image: url("menu1.jpg");}
+	</style>
+
+</head>
+<body>
+
+<h1 class="title text-danger m-3">The King of Pizza</h1>
+<h2 class="sub">Online Order</h2>
+<div class="main flex-column">
+	<div class="menu">
+
+		<!-- Size -->
+		<div class="size m-3">
+			<form>
+			<div class="form-group">
+				<h3>>Size Select</h3>
+			    <select class="form-control" id="size">
+			      <option value="Personal">Personal - $6.00</option>
+			      <option id="Medium" value="Medium" selected>Medium - $10.00</option>
+			      <option value="Large">Large - $14.00</option>
+			      <option value="Extra Large">Extra Large - $16.00</option>
+			    </select>
+			</div>
+			</form>
+			<p>For <span>Meats</span> and <span>Veggies</span>,
+				first one for each is complementary.</br>
+				+$1.00 each additional meat and vegitable items beyond the first complementary item.
+				</p>
+		</div>
+ 
+		<div class="row m-3">
+			<!-- Meats -->
+			<div class="menus meats mr-3">
+				<h3>Meats</h3>
+				
+				<div class="form-check has-success">
+				  <label class="form-check-label">
+				    <input type="checkbox" name="meats" class=" form-check-input" id="Pepperoni" value="Pepperoni">
+				    Pepperoni
+				  </label>
+				</div>
+				<div class="form-check has-warning">
+				  <label class="form-check-label">
+				    <input type="checkbox" name="meats" class="form-check-input" id="" value="Sausage">
+				    Sausage
+				  </label>
+				</div>
+				<div class="form-check has-danger">
+				  <label class="form-check-label">
+				    <input type="checkbox" name="meats" class="form-check-input" id="" value="Candian Bacon">
+				    Canadian Bacon
+				  </label>
+				</div>
+				<div class="form-check has-success">
+				  <label class="form-check-label">
+				    <input type="checkbox" name="meats" class="form-check-input" id="" value="Ground Beef">
+				    Ground Beef
+				  </label>
+				</div>
+				<div class="form-check has-warning">
+				  <label class="form-check-label">
+				    <input type="checkbox" name="meats" class="form-check-input" id="" value="Anchovy">
+				    Anchovy
+				  </label>
+				</div>
+				<div class="form-check has-danger">
+				  <label class="form-check-label">
+				    <input type="checkbox" name="meats" class="form-check-input" id="" value="Chicken">
+				    Chicken
+				  </label>
+				</div>
+			</div>
+
+			<!-- Veggies -->
+			<div class=" menus veggies">
+				<h3>Veggies</h3>
+				<div class="form-check has-success">
+				  <label class="form-check-label">
+				    <input type="checkbox" name="veggies" class="form-check-input" id="" value="Tomatoes">
+				    Tomatoes
+				  </label>
+				</div>
+				<div class="form-check has-warning">
+				  <label class="form-check-label">
+				    <input type="checkbox" name="veggies" class="form-check-input" id="" value="Onions">
+				    Onions
+				  </label>
+				</div>
+				<div class="form-check has-danger">
+				  <label class="form-check-label">
+				    <input type="checkbox" name="veggies" class="form-check-input" id="" value="Olives">
+				    Olives
+				  </label>
+				</div>
+				<div class="form-check has-success">
+				  <label class="form-check-label">
+				    <input type="checkbox" name="veggies" class="form-check-input" id="" value="Green Peppers">
+				    Green Peppers
+				  </label>
+				</div>
+				<div class="form-check has-warning">
+				  <label class="form-check-label">
+				    <input type="checkbox" name="veggies" class="form-check-input" id="" value="Mushrooms">
+				    Mushrooms
+				  </label>
+				</div>
+				<div class="form-check has-danger">
+				  <label class="form-check-label">
+				    <input type="checkbox" name="veggies" class="form-check-input" id="" value="Pineapple">
+				    Pineapple
+				  </label>
+				</div>
+				<div class="form-check has-success">
+				  <label class="form-check-label">
+				    <input type="checkbox" name="veggies" class="form-check-input" id="" value="Spinach">
+				    Spinach
+				  </label>
+				</div>
+				<div class="form-check has-warning">
+				  <label class="form-check-label">
+				    <input type="checkbox" name="veggies" class="form-check-input" id="" value="Jalapeno">
+				    Jalapeno
+				  </label>
+				</div>
+			</div>
+		</div>
+
+		<!-- Cheese -->
+		<div class="row m-3">
+			<div class="menus cheese mr-3">
+				<h3>Cheese</h3>
+				<div class="form-check has-success">
+				  <label class="form-check-label">
+				    <input class="form-check-input" type="radio" name="cheese" id="regular" value="Regular" checked>
+				    Regular
+				  </label>
+				</div>
+				<div class="form-check has-warning">
+				  <label class="form-check-label">
+				    <input class="form-check-input" type="radio" name="cheese" id="nocheese" value="No Cheese">
+				    No Cheese
+				  </label>
+				</div>
+				<div class="form-check has-danger">
+				  <label class="form-check-label">
+				    <input class="form-check-input" type="radio" name="cheese" id="extracheese" value="Extra Cheese">
+				    Extra Cheese<br>(+$3.00)
+				  </label>
+				</div>
+			</div>
+
+			<!-- Crust -->
+			<div class="menus crust mr-3">
+				<h3>Crust</h3>
+				<div class="form-check has-success">
+				  <label class="form-check-label">
+				    <input class="form-check-input" type="radio" name="crust" id="plain" value="Plain Crust" checked>
+				    Plain Crust
+				  </label>
+				</div>
+				<div class="form-check has-warning">
+				  <label class="form-check-label">
+				    <input class="form-check-input" type="radio" name="crust" id="garlicButter" value="Garlic Butter Crust">
+				    Garlic Butter Crust
+				  </label>
+				</div>
+				<div class="form-check has-danger">
+				  <label class="form-check-label">
+				    <input class="form-check-input" type="radio" name="crust" id="cheeseStuffed" value="Cheese Stuffed Crust">
+				    Cheese Stuffed Crust<br>(+$3.00)
+				  </label>
+				</div>
+				<div class="form-check has-success">
+				  <label class="form-check-label">
+				    <input class="form-check-input" type="radio" name="crust" id="spicy" value="Spicy Crust">
+				    Spicy Crust
+				  </label>
+				</div>
+				<div class="form-check has-warning">
+				  <label class="form-check-label">
+				    <input class="form-check-input" type="radio" name="crust" id="houseSpecial" value="House Special Crust">
+				    House Special Crust
+				  </label>
+				</div>
+			</div>
+
+			<!-- Sauce-->
+			<div class="menus sauce mr-3">
+				<h3>Sauce</h3>
+				<div class="form-check has-success">
+				  <label class="form-check-label">
+				    <input class="form-check-input" type="radio" name="sauce" id="marinara" value="Marinara sauce" checked>
+				    Marinara sauce
+				  </label>
+				</div>
+				<div class="form-check has-warning">
+				  <label class="form-check-label">
+				    <input class="form-check-input" type="radio" name="sauce" id="white" value="White sauce">
+				    White sauce
+				  </label>
+				</div>
+				<div class="form-check has-danger">
+				  <label class="form-check-label">
+				    <input class="form-check-input" type="radio" name="sauce" id="barbeque" value="Barbeque sauce">
+				    Barbeque sauce
+				  </label>
+				</div>
+				<div class="form-check has-success">
+				  <label class="form-check-label">
+				    <input class="form-check-input" type="radio" name="sauce" id="noSauce" value="No sauce">
+				    No Sauce
+				  </label>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="button m-3">
+		<button id="check" class="btn btn-danger" type="button" onclick="check()">Check</button>
+		<button id="cancel" class="btn btn-danger" type="button" onclick="cancel()">Cancel</button>
+		<p id="notice">Check your order below</p>
+	</div>
+
+	<div id="receipt" class="m-3">
+		<h3 id="treceipt">Receipt</h3>
+		<div class="row">
+			<table id="vreceipt" class="m-3">
+				<tr>
+					<th>Items</th>
+					<th>Sub total</th>
+				</tr>
+			</table>
+			<button type="button" class="btn-lg btn-danger m-3">Order<br>(Not Working)</button>
+		</div>
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/pizzastyle.js"></script>
+
+</body>
+</html>
