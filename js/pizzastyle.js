@@ -1,29 +1,20 @@
 
-// Hide and show up the receipt part
+// Hide and show up the receipt part, and Cancel function
 $(document).ready(function() {
-	$("#receipt, #notice").hide();
-	$("#check").click(function() {
+	$("#receipt, #notice").hide();	//Hide a receipt and a notice
+	$("#check").click(function() {	//Show a receipt and a notice
 		$("#receipt, #notice").show();
 	});
-});
-
-//cancel
-$(document).ready(function() {
-	$("#cancel").click(function() {
-		$("#receipt, #notice").hide();
-		$("#Medium").prop("selected", true);
-		$("input[name=meats]").prop("checked", false);
-		$("input[name=veggies]").prop("checked", false);
-		$("#regular").prop("checked", true);
-		$("#plain").prop("checked", true);
-		$("#marinara").prop("checked", true);
+	$("#cancel").click(function() {	//Occur Cancel function
+	$("#receipt, #notice").hide();
+	$("#Medium").prop("selected", true);
+	$("input[name=meats]").prop("checked", false);
+	$("input[name=veggies]").prop("checked", false);
+	$("#regular").prop("checked", true);
+	$("#plain").prop("checked", true);
+	$("#marinara").prop("checked", true);
 	})
-})
-
-function cancel() {
-//	document.getElementsByName("meats").checked = false;
-}
-
+});
 
 
 function check() {
