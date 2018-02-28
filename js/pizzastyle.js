@@ -11,11 +11,12 @@ $(document).ready(function() {
 $(document).ready(function() {
 	$("#cancel").click(function() {
 		$("#receipt, #notice").hide();
-		$("#Medium").attr("selected", true);
-		$("input[name=meats]").attr("checked", false);
-		$("input[name=veggies]").attr("checked", false);
-		$("#regular").attr("checked", false);
-		$("#marinara").attr("checked", false);
+		$("#Medium").prop("selected", true);
+		$("input[name=meats]").prop("checked", false);
+		$("input[name=veggies]").prop("checked", false);
+		$("#regular").prop("checked", true);
+		$("#plain").prop("checked", true);
+		$("#marinara").prop("checked", true);
 	})
 })
 
